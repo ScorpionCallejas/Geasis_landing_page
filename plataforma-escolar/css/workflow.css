@@ -1,0 +1,792 @@
+/* ========== WORKFLOW ========== */
+.workflow-section{
+    min-height:100vh;
+    background:var(--bg);
+    position:relative;
+    padding:120px 0 80px;
+}
+
+.workflow-container{
+    max-width:var(--max-w);
+    margin:0 auto;
+    padding:0 var(--pad);
+}
+
+.workflow-header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.workflow-progress{
+    margin-bottom:80px;
+}
+
+.progress-track{
+    height:3px;
+    background:var(--border);
+    border-radius:3px;
+    margin-bottom:32px;
+    position:relative;
+    overflow:visible;
+}
+
+.progress-fill{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:16.66%;
+    background:linear-gradient(90deg,var(--primary),var(--primary-light));
+    border-radius:3px;
+    transition:width .5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow:0 0 20px rgba(0,188,212,.3);
+}
+
+.progress-steps{
+    display:flex;
+    justify-content:space-between;
+    gap:16px;
+    position:relative;
+}
+
+.progress-step{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:14px;
+    cursor:pointer;
+    transition:all .3s ease;
+    flex:1;
+    min-width:0;
+    position:relative;
+}
+
+.step-dot{
+    width:20px;
+    height:20px;
+    background:var(--bg-card);
+    border:3px solid var(--border);
+    border-radius:50%;
+    transition:all .3s cubic-bezier(0.4, 0, 0.2, 1);
+    position:relative;
+    flex-shrink:0;
+    z-index:2;
+}
+
+.step-dot::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:8px;
+    height:8px;
+    background:var(--primary);
+    border-radius:50%;
+    opacity:0;
+    transition:all .3s ease;
+}
+
+.step-dot::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0);
+    width:36px;
+    height:36px;
+    background:rgba(0,188,212,.15);
+    border-radius:50%;
+    transition:all .4s ease;
+}
+
+.progress-step:hover .step-dot{
+    transform:scale(1.15);
+    border-color:var(--primary);
+}
+
+.progress-step.active .step-dot{
+    border-color:var(--primary);
+    background:var(--primary);
+    box-shadow:0 0 0 6px rgba(0,188,212,.15),
+               0 4px 12px rgba(0,188,212,.3);
+}
+
+.progress-step.active .step-dot::before{
+    transform:translate(-50%,-50%) scale(1);
+}
+
+.progress-step.active .step-dot::after{
+    opacity:0;
+}
+
+.progress-step.completed .step-dot{
+    background:var(--primary);
+    border-color:var(--primary);
+    box-shadow:0 2px 8px rgba(0,188,212,.2);
+}
+
+.progress-step.completed .step-dot::after{
+    opacity:0;
+}
+
+/* Checkmark para pasos completados */
+.progress-step.completed .step-dot::after{
+    content:'✓';
+    width:auto;
+    height:auto;
+    background:transparent;
+    color:#fff;
+    font-size:12px;
+    font-weight:bold;
+    opacity:1;
+}
+
+.progress-step span{
+    font-size:13px;
+    font-weight:600;
+    color:var(--text-muted);
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    transition:all .3s ease;
+    text-align:center;
+    word-break:break-word;
+    line-height:1.3;
+}
+
+.progress-step:hover span{
+    color:var(--text-soft);
+}
+
+.progress-step.active span,
+.progress-step.completed span{
+    color:var(--primary);
+    font-weight:700;
+}
+
+/* ========== ALTURA FIJA PARA WORKFLOW SLIDES ========== */
+.workflow-slides{
+    position:relative;
+    min-height:700px; /* ⬅️ ALTURA FIJA */
+    height:700px; /* ⬅️ ALTURA FIJA */
+    overflow:visible;
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:32px;
+    padding:60px;
+    box-shadow:0 20px 60px rgba(0,0,0,.1);
+}
+
+[data-theme="light"] .workflow-slides{
+    box-shadow:0 20px 60px rgba(0,0,0,.05);
+}
+
+.workflow-slide{
+    display:none;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:start; /* ⬅️ CAMBIADO DE center A start */
+    animation:slideIn .6s cubic-bezier(0.4, 0, 0.2, 1);
+    position:absolute; /* ⬅️ AGREGADO */
+    top:0; /* ⬅️ AGREGADO */
+    left:0; /* ⬅️ AGREGADO */
+    width:100%; /* ⬅️ AGREGADO */
+    height:100%; /* ⬅️ AGREGADO */
+    padding:60px; /* ⬅️ AGREGADO */
+}
+
+.workflow-slide.active{
+    display:grid;
+    position:absolute; /* ⬅️ AGREGADO */
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.slide-content{
+    display:flex;
+    flex-direction:column;
+    gap:24px;
+    overflow-y:auto; /* ⬅️ AGREGADO por si el contenido es muy largo */
+    max-height:100%; /* ⬅️ AGREGADO */
+    padding-right:10px; /* ⬅️ AGREGADO para espacio del scroll */
+}
+
+/* Scrollbar personalizado (opcional) */
+.slide-content::-webkit-scrollbar{
+    width:6px;
+}
+
+.slide-content::-webkit-scrollbar-track{
+    background:transparent;
+}
+
+.slide-content::-webkit-scrollbar-thumb{
+    background:var(--border);
+    border-radius:3px;
+}
+
+.slide-content::-webkit-scrollbar-thumb:hover{
+    background:var(--primary);
+}
+
+.slide-number{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-family:var(--font);
+    font-size:14px;
+    font-weight:700;
+    color:var(--primary);
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    padding:8px 16px;
+    background:rgba(0,188,212,.1);
+    border:1px solid rgba(0,188,212,.2);
+    border-radius:100px;
+    width:fit-content;
+}
+
+.slide-number::before{
+    content:'';
+    width:6px;
+    height:6px;
+    background:var(--primary);
+    border-radius:50%;
+    animation:pulse 2s ease-in-out infinite;
+}
+
+.slide-title{
+    font-family:var(--font);
+    font-size:clamp(32px,4vw,44px);
+    font-weight:700;
+    line-height:1.15;
+    letter-spacing:-.02em;
+    color:var(--text);
+}
+
+.slide-title .highlight{
+    background:linear-gradient(135deg,var(--primary),var(--primary-light));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.slide-desc{
+    font-size:17px;
+    line-height:1.7;
+    color:var(--text-soft);
+}
+
+.slide-desc .accent{
+    color:var(--primary);
+    font-weight:600;
+}
+
+.slide-features{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    margin-top:8px;
+}
+
+.slide-features li{
+    display:flex;
+    align-items:flex-start;
+    gap:16px;
+    padding:16px;
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:14px;
+    transition:all .3s ease;
+    font-size:15px;
+    color:var(--text-soft);
+    line-height:1.6;
+}
+
+.slide-features li:hover{
+    border-color:var(--primary);
+    background:rgba(0,188,212,.05);
+    transform:translateX(8px);
+}
+
+.slide-features li svg{
+    width:24px;
+    height:24px;
+    color:var(--primary);
+    flex-shrink:0;
+    margin-top:2px;
+}
+
+.info-box{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    background:linear-gradient(135deg,rgba(0,188,212,.08),rgba(0,229,255,.08));
+    border:1.5px solid rgba(0,188,212,.25);
+    border-radius:16px;
+    padding:20px 24px;
+}
+
+.ib-icon{
+    font-size:32px;
+    filter:drop-shadow(0 2px 8px rgba(0,188,212,.3));
+}
+
+.ib-text{
+    font-size:19px;
+    font-weight:700;
+    background:linear-gradient(135deg,var(--primary),var(--primary-light));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.slide-visual{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:500px;
+    max-height:580px; /* ⬅️ AGREGADO */
+    background:var(--bg);
+    border:1px solid var(--border);
+    border-radius:24px;
+    padding:40px;
+    position:relative;
+    overflow:hidden;
+}
+
+.slide-visual::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:300px;
+    height:300px;
+    background:radial-gradient(circle,rgba(0,188,212,.1) 0%,transparent 70%);
+    pointer-events:none;
+}
+
+/* ========== RESPONSIVE WORKFLOW ========== */
+@media(max-width:1200px){
+    .workflow-slides{
+        padding:50px;
+        gap:60px;
+        min-height:750px; /* ⬅️ AJUSTADO */
+        height:750px; /* ⬅️ AJUSTADO */
+    }
+    
+    .workflow-slide{
+        gap:60px;
+        padding:50px; /* ⬅️ AJUSTADO */
+    }
+}
+
+@media(max-width:1024px){
+    .workflow-section{
+        padding:100px 0 60px;
+    }
+    
+    .workflow-slides{
+        padding:40px;
+        min-height:auto; /* ⬅️ AUTO en tablet */
+        height:auto; /* ⬅️ AUTO en tablet */
+    }
+    
+    .workflow-slide{
+        gap:50px;
+        padding:40px; /* ⬅️ AJUSTADO */
+        position:relative; /* ⬅️ CAMBIADO A relative en tablet */
+    }
+    
+    .slide-visual{
+        min-height:420px;
+    }
+}
+
+@media(max-width:968px){
+    .workflow-section{
+        padding:80px 0 50px;
+    }
+    
+    .workflow-header{
+        margin-bottom:60px;
+    }
+    
+    .workflow-progress{
+        margin-bottom:60px;
+    }
+    
+    .progress-steps{
+        overflow-x:auto;
+        overflow-y:hidden;
+        gap:20px;
+        padding-bottom:12px;
+        justify-content:flex-start;
+        -webkit-overflow-scrolling:touch;
+        scrollbar-width:thin;
+        scrollbar-color:var(--primary) var(--bg);
+    }
+    
+    .progress-steps::-webkit-scrollbar{
+        height:5px;
+    }
+    
+    .progress-steps::-webkit-scrollbar-track{
+        background:var(--bg-card);
+        border-radius:10px;
+    }
+    
+    .progress-steps::-webkit-scrollbar-thumb{
+        background:var(--primary);
+        border-radius:10px;
+    }
+    
+    .progress-step{
+        min-width:90px;
+        flex-shrink:0;
+    }
+    
+    .progress-step span{
+        font-size:11px;
+        white-space:nowrap;
+    }
+    
+    .workflow-slides{
+        padding:36px 28px;
+        border-radius:24px;
+    }
+    
+    .workflow-slide{
+        grid-template-columns:1fr;
+        gap:40px;
+        padding:36px 28px; /* ⬅️ AJUSTADO */
+    }
+    
+    .slide-visual{
+        order:2;
+        min-height:350px;
+        padding:32px;
+    }
+    
+    .slide-content{
+        order:1;
+        gap:20px;
+    }
+    
+    .slide-title{
+        font-size:28px;
+    }
+}
+
+@media(max-width:768px){
+    .workflow-section{
+        padding:60px 0 40px;
+    }
+    
+    .workflow-header{
+        margin-bottom:50px;
+    }
+    
+    .workflow-progress{
+        margin-bottom:50px;
+    }
+    
+    .progress-track{
+        margin-bottom:28px;
+    }
+    
+    .step-dot{
+        width:18px;
+        height:18px;
+        border-width:2.5px;
+    }
+    
+    .step-dot::before{
+        width:32px;
+        height:32px;
+    }
+    
+    .progress-step span{
+        font-size:10px;
+    }
+    
+    .workflow-slides{
+        padding:32px 24px;
+        min-height:auto;
+    }
+    
+    .workflow-slide{
+        gap:32px;
+    }
+    
+    .slide-number{
+        font-size:12px;
+        padding:6px 14px;
+    }
+    
+    .slide-title{
+        font-size:26px;
+    }
+    
+    .slide-desc{
+        font-size:16px;
+    }
+    
+    .slide-features{
+        gap:12px;
+    }
+    
+    .slide-features li{
+        padding:14px;
+        font-size:14px;
+        gap:12px;
+    }
+    
+    .slide-features li svg{
+        width:22px;
+        height:22px;
+    }
+    
+    .info-box{
+        padding:16px 20px;
+        gap:14px;
+    }
+    
+    .ib-icon{
+        font-size:28px;
+    }
+    
+    .ib-text{
+        font-size:17px;
+    }
+    
+    .slide-visual{
+        min-height:320px;
+        padding:28px;
+    }
+}
+
+@media(max-width:640px){
+    .workflow-section{
+        padding:50px 0 30px;
+    }
+    
+    .workflow-header{
+        margin-bottom:40px;
+    }
+    
+    .workflow-progress{
+        margin-bottom:40px;
+    }
+    
+    .progress-track{
+        height:2px;
+        margin-bottom:24px;
+    }
+    
+    .progress-fill{
+        height:2px;
+    }
+    
+    .progress-steps{
+        gap:16px;
+        padding-bottom:10px;
+    }
+    
+    .progress-step{
+        min-width:75px;
+        gap:10px;
+    }
+    
+    .step-dot{
+        width:16px;
+        height:16px;
+        border-width:2px;
+    }
+    
+    .step-dot::after{
+        width:6px;
+        height:6px;
+        font-size:10px;
+    }
+    
+    .step-dot::before{
+        width:28px;
+        height:28px;
+    }
+    
+    .progress-step span{
+        font-size:9px;
+        letter-spacing:.04em;
+    }
+    
+    .workflow-slides{
+        padding:28px 20px;
+        border-radius:20px;
+    }
+    
+    .workflow-slide{
+        gap:28px;
+    }
+    
+    .slide-content{
+        gap:18px;
+    }
+    
+    .slide-number{
+        font-size:11px;
+        padding:6px 12px;
+    }
+    
+    .slide-number::before{
+        width:5px;
+        height:5px;
+    }
+    
+    .slide-title{
+        font-size:24px;
+    }
+    
+    .slide-desc{
+        font-size:15px;
+    }
+    
+    .slide-features{
+        gap:10px;
+        margin-top:4px;
+    }
+    
+    .slide-features li{
+        padding:12px;
+        font-size:13px;
+        gap:10px;
+        border-radius:12px;
+    }
+    
+    .slide-features li svg{
+        width:20px;
+        height:20px;
+    }
+    
+    .info-box{
+        padding:14px 18px;
+        gap:12px;
+        border-radius:14px;
+    }
+    
+    .ib-icon{
+        font-size:26px;
+    }
+    
+    .ib-text{
+        font-size:16px;
+    }
+    
+    .slide-visual{
+        min-height:280px;
+        padding:24px;
+        border-radius:20px;
+    }
+    
+    .slide-visual::before{
+        width:200px;
+        height:200px;
+    }
+}
+
+@media(max-width:480px){
+    .workflow-slides{
+        padding:24px 16px;
+    }
+    
+    .progress-step{
+        min-width:65px;
+        gap:8px;
+    }
+    
+    .step-dot{
+        width:14px;
+        height:14px;
+    }
+    
+    .step-dot::before{
+        width:24px;
+        height:24px;
+    }
+    
+    .progress-step span{
+        font-size:8px;
+    }
+    
+    .slide-number{
+        font-size:10px;
+        padding:5px 10px;
+    }
+    
+    .slide-title{
+        font-size:22px;
+    }
+    
+    .slide-desc{
+        font-size:14px;
+    }
+    
+    .slide-features li{
+        padding:10px;
+        font-size:12px;
+    }
+    
+    .slide-features li svg{
+        width:18px;
+        height:18px;
+    }
+    
+    .info-box{
+        padding:12px 16px;
+    }
+    
+    .ib-icon{
+        font-size:24px;
+    }
+    
+    .ib-text{
+        font-size:15px;
+    }
+    
+    .slide-visual{
+        min-height:260px;
+        padding:20px;
+    }
+}
+
+@media(max-width:375px){
+    .workflow-section{
+        padding:40px 0 25px;
+    }
+    
+    .workflow-slides{
+        padding:20px 14px;
+    }
+    
+    .slide-title{
+        font-size:20px;
+    }
+    
+    .slide-desc{
+        font-size:13px;
+    }
+    
+    .slide-visual{
+        min-height:240px;
+        padding:16px;
+    }
+}

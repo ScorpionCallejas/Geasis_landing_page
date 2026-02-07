@@ -1,0 +1,271 @@
+/* ========== TESTIMONIALS ========== */
+.testimonials-section{
+    min-height:100vh;
+    background:var(--bg);
+    position:relative;
+    padding: 0;
+    padding-top: 120px;
+}
+
+.testimonials-container{
+    max-width:var(--max-w);
+    margin:0 auto;
+    padding:0 var(--pad);
+}
+
+.testimonials-header{
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.testimonials-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:32px;
+    margin-bottom:80px;
+}
+
+.testimonial-card{
+    background:var(--bg-card);
+    border:1px solid var(--border);
+    border-radius:20px;
+    padding:32px;
+    transition:all .3s ease;
+    opacity:0;
+    transform:translateY(30px);
+}
+
+.testimonial-card.visible{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.testimonial-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--primary);
+    box-shadow:0 20px 60px rgba(0,188,212,.15);
+}
+
+.testimonial-header{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-bottom:20px;
+}
+
+.testimonial-avatar{
+    width:56px;
+    height:56px;
+    background:linear-gradient(135deg, var(--primary), var(--primary-light));
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.testimonial-avatar svg{
+    color:#fff;
+}
+
+.testimonial-info{
+    flex:1;
+}
+
+.testimonial-name{
+    font-family:var(--font);
+    font-size:16px;
+    font-weight:700;
+    color:var(--text);
+    margin-bottom:4px;
+}
+
+.testimonial-role{
+    font-size:13px;
+    color:var(--text-muted);
+    line-height:1.4;
+}
+
+.testimonial-stars{
+    display:flex;
+    gap:4px;
+    margin-bottom:20px;
+}
+
+.testimonial-stars svg{
+    color:var(--primary);
+}
+
+.testimonial-text{
+    font-size:15px;
+    line-height:1.7;
+    color:var(--text-soft);
+    margin-bottom:24px;
+    min-height:120px;
+}
+
+.testimonial-metric{
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+    padding-top:24px;
+    border-top:1px solid var(--border);
+}
+
+.metric-value{
+    font-family:var(--font);
+    font-size:28px;
+    font-weight:700;
+    background:linear-gradient(135deg, var(--primary), var(--primary-light));
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.metric-label{
+    font-size:12px;
+    color:var(--text-muted);
+    text-transform:uppercase;
+    letter-spacing:.05em;
+}
+
+/* ========== LOGOS EMPRESAS ========== */
+.testimonials-logos{
+    text-align:center;
+    padding-top:60px;
+    border-top:1px solid var(--border);
+}
+
+.logos-title{
+    font-size:14px;
+    font-weight:600;
+    color:var(--text-muted);
+    text-transform:uppercase;
+    letter-spacing:.1em;
+    margin-bottom:40px;
+}
+
+.logos-carousel{
+    overflow:hidden;
+    position:relative;
+    width:100%;
+    padding:30px 0;
+}
+
+.logos-carousel::before,
+.logos-carousel::after{
+    content:'';
+    position:absolute;
+    top:0;
+    width:150px;
+    height:100%;
+    z-index:2;
+    pointer-events:none;
+}
+
+.logos-carousel::before{
+    left:0;
+    background:linear-gradient(to right, var(--bg) 0%, transparent 100%);
+}
+
+.logos-carousel::after{
+    right:0;
+    background:linear-gradient(to left, var(--bg) 0%, transparent 100%);
+}
+
+.logos-track{
+    display:flex;
+    gap:100px;
+    animation:scroll 40s linear infinite;
+    width:max-content;
+}
+
+.logos-track:hover{
+    animation-play-state:paused;
+}
+
+@keyframes scroll{
+    0%{
+        transform:translateX(0);
+    }
+    100%{
+        transform:translateX(calc(-50%));
+    }
+}
+
+.logo-item{
+    flex-shrink:0;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:all .3s ease;
+    user-select:none;
+}
+
+.logo-item svg{
+    height:100%;
+    width:auto;
+    color:var(--text-soft);
+    opacity:0.7;
+    transition:all .3s ease;
+}
+
+.logo-item:hover svg{
+    color:var(--primary);
+    opacity:1;
+    transform:scale(1.1);
+}
+
+/* Modo claro */
+[data-theme="light"] .logo-item svg{
+    color:var(--text);
+    opacity:0.6;
+}
+
+[data-theme="light"] .logo-item:hover svg{
+    color:var(--primary);
+    opacity:1;
+}
+
+/* ========== RESPONSIVE TESTIMONIALS ========== */
+@media(max-width:1200px){
+    .testimonials-grid{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media(max-width:968px){
+    .testimonials-section{
+        padding:80px 0;
+    }
+    .testimonials-header{
+        margin-bottom:60px;
+    }
+    .testimonials-grid{
+        grid-template-columns:1fr;
+        gap:24px;
+        margin-bottom:60px;
+    }
+    .testimonial-text{
+        min-height:auto;
+    }
+}
+
+@media(max-width:640px){
+    .testimonials-section{
+        padding:60px 0;
+    }
+    .testimonial-card{
+        padding:24px;
+    }
+    .testimonial-avatar{
+        width:48px;
+        height:48px;
+    }
+    .logo-item{
+        font-size:18px;
+    }
+    .logos-track{
+        gap:60px;
+    }
+}

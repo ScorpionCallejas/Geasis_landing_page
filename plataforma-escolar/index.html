@@ -1,0 +1,4485 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEASIS - ERP Académico Inteligente</title>
+
+    <!-- Fonts - Space Grotesk -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/navigation.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/workflow.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/testimonials.css" />
+    <link rel="stylesheet" href="css/branding.css" />
+    <link rel="stylesheet" href="css/modules.css" />
+    <link rel="stylesheet" href="css/demo-modal.css" />
+    <link rel="stylesheet" href="css/app-mobile.css" />
+    <link rel="stylesheet" href="css/faq.css" />
+    <link rel="stylesheet" href="css/microinteractions.css" />
+    <link rel="stylesheet" href="css/geasis-bot.css" />
+    <link rel="stylesheet" href="css/pricing.css" />
+  </head>
+  <body>
+    <!-- ========== NAV ========== -->
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#" class="nav-logo">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+          </svg>
+          <span>GEASIS</span>
+        </a>
+        <div class="nav-links">
+          <a href="#workflow">Flujo</a>
+          <a href="#embudo">Resultados</a>
+          <a href="#testimonios">Testimonios</a>
+          <a href="#modulos">Módulos</a>
+          <a href="#plataforma">Plataforma</a>
+          <a href="#app-movil">App Móvil</a>
+          <a href="#precios">Precios</a>
+        </div>
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Cambiar tema"
+          >
+            <svg
+              class="icon-sun"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg
+              class="icon-moon"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <button class="nav-cta">Ver Demo →</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="hero">
+      <div class="hero-video">
+        <!-- Video Modo Oscuro -->
+        <video
+          id="video-dark"
+          class="hero-video-player active"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source src="assets/videos/render_oscuro.webm" type="video/webm" />
+          <source src="assets/videos/render_oscuro.mp4" type="video/mp4" />
+        </video>
+
+        <!-- Video Modo Claro -->
+        <video
+          id="video-light"
+          class="hero-video-player"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source src="assets/videos/render_claro.webm" type="video/webm" />
+          <source src="assets/videos/render_claro.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="spline-overlay"></div>
+      <div class="spline-overlay"></div>
+
+      <div class="hero-container">
+        <div class="hero-content">
+          <span class="hero-badge">
+            <span class="badge-dot"></span>
+            Inteligencia Académica
+          </span>
+
+          <h1 class="hero-title">Gestión académica<br />descifrada.</h1>
+
+          <p class="hero-desc">
+            Toma decisiones académicas inteligentes más rápido. GEASIS es la
+            solución unificada para la gestión integral de instituciones
+            educativas, automatización de procesos y análisis de datos en tiempo
+            real.
+          </p>
+
+          <div class="hero-ctas">
+            <button class="btn-primary">
+              <span>Ver una demostración</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+            <button class="btn-secondary">Explorar plataforma</button>
+          </div>
+
+          <div class="hero-trust">
+            <div class="trust-stats">
+              <div class="trust-stat">
+                <span class="trust-number">34</span>
+                <span class="trust-label">Instituciones</span>
+              </div>
+              <div class="trust-divider"></div>
+              <div class="trust-stat">
+                <span class="trust-number">7,853</span>
+                <span class="trust-label">Usuarios activos</span>
+              </div>
+            </div>
+            <span class="trust-tagline"
+              >Colegios e instituciones privadas que confían en nosotros</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+        <span>Desliza para explorar</span>
+      </div>
+    </section>
+
+    <!-- ========== WORKFLOW ========== -->
+    <section class="workflow-section" id="workflow">
+      <div class="workflow-container">
+        <div class="workflow-header">
+          <span class="section-badge">EL RECORRIDO AUTOMATIZADO</span>
+          <h2 class="section-title">
+            De inscripción a graduación.<br /><span class="title-gradient"
+              >Sin fricción.</span
+            >
+          </h2>
+          <p class="section-desc">
+            Un flujo continuo que elimina el trabajo manual: el alumno se
+            inscribe, recibe su app, se domicilia su pago, y el sistema hace el
+            resto.
+          </p>
+        </div>
+
+        <div class="workflow-slider">
+          <div class="workflow-progress">
+            <div class="progress-track"><div class="progress-fill"></div></div>
+            <div class="progress-steps">
+              <div class="progress-step active" data-step="1">
+                <div class="step-dot"></div>
+                <span>Inscripción</span>
+              </div>
+              <div class="progress-step" data-step="2">
+                <div class="step-dot"></div>
+                <span>App</span>
+              </div>
+              <div class="progress-step" data-step="3">
+                <div class="step-dot"></div>
+                <span>Domiciliación</span>
+              </div>
+              <div class="progress-step" data-step="4">
+                <div class="step-dot"></div>
+                <span>Cobro</span>
+              </div>
+              <div class="progress-step" data-step="5">
+                <div class="step-dot"></div>
+                <span>Recordatorio</span>
+              </div>
+              <div class="progress-step" data-step="6">
+                <div class="step-dot"></div>
+                <span>Escalamiento</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="workflow-slides">
+            <!-- Slide 1: Inscripción -->
+            <div class="workflow-slide active" data-slide="1">
+              <div class="slide-content">
+                <div class="slide-number">01</div>
+                <h3 class="slide-title">Inscripción Digital</h3>
+                <p class="slide-desc">
+                  El alumno completa su registro en línea. El sistema genera
+                  automáticamente sus credenciales, solicitud de inscripción en
+                  PDF, y activa su expediente digital.
+                </p>
+                <ul class="slide-features">
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Formulario inteligente con validación</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>PDF de solicitud auto-generado</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Credenciales enviadas por correo</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-visual">
+                <div class="device-phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen gradient-bg">
+                    <div class="mock-form">
+                      <div class="mock-logo">📚</div>
+                      <span class="mock-subtitle"
+                        >Solicitud de Inscripción</span
+                      >
+                      <div class="mock-field">
+                        <span class="mf-label">Nombre</span
+                        ><span class="mf-value">María González</span>
+                      </div>
+                      <div class="mock-field">
+                        <span class="mf-label">Correo</span
+                        ><span class="mf-value">maria@correo.com</span>
+                      </div>
+                      <div class="mock-field typing">
+                        <span class="mf-label">Programa</span
+                        ><span class="mf-value"
+                          >Prepa EMPRENDE<span class="cursor">|</span></span
+                        >
+                      </div>
+                      <div class="mock-btn">Enviar solicitud</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2: App -->
+            <div class="workflow-slide" data-slide="2">
+              <div class="slide-content">
+                <div class="slide-number">02</div>
+                <h3 class="slide-title">Instalación de la App</h3>
+                <p class="slide-desc">
+                  Inmediatamente después de inscribirse, el alumno recibe un
+                  enlace para descargar la App desde Play Store o App Store.
+                </p>
+                <ul class="slide-features">
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Disponible en iOS y Android</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Inicio de sesión automático</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Notificaciones habilitadas</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-visual">
+                <div class="device-phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen gradient-bg">
+                    <div class="mock-appstore">
+                      <div class="app-icon-lg">🎓</div>
+                      <h4>App Móvil Educativa</h4>
+                      <span>Tu Institución Educativa</span>
+                      <div class="app-stars">★★★★★</div>
+                      <div class="app-download-bar">
+                        <div class="download-fill"></div>
+                        <span>Instalando...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="store-badges">
+                  <div class="s-badge">
+                    <span>🍎</span><span>App Store</span>
+                  </div>
+                  <div class="s-badge">
+                    <span>▶️</span><span>Google Play</span>
+                  </div>
+                  <div class="s-badge">
+                    <span>▶️</span><span>AppGallery</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3: Domiciliación -->
+            <div class="workflow-slide" data-slide="3">
+              <div class="slide-content">
+                <div class="slide-number">03</div>
+                <h3 class="slide-title">Domiciliación de Pago</h3>
+                <p class="slide-desc">
+                  <strong class="accent">Como Netflix o Spotify:</strong> el
+                  alumno registra su tarjeta una sola vez y el sistema hace el
+                  resto.
+                </p>
+                <div class="info-box">
+                  <span class="ib-icon">🔄</span
+                  ><span class="ib-text">Registra 1 vez. Cobra N veces.</span>
+                </div>
+                <div class="retry-box">
+                  <div class="retry-dots">
+                    <div class="retry-dot fail" data-n="1">
+                      <span class="dot-num">1</span><span class="dot-x">✕</span>
+                    </div>
+                    <div class="retry-dot fail" data-n="2">
+                      <span class="dot-num">2</span><span class="dot-x">✕</span>
+                    </div>
+                    <div class="retry-dot fail" data-n="3">
+                      <span class="dot-num">3</span><span class="dot-x">✕</span>
+                    </div>
+                    <div class="retry-dot success" data-n="4">
+                      <span class="dot-num">4</span
+                      ><span class="dot-check">✓</span>
+                    </div>
+                  </div>
+                  <span class="retry-label"
+                    >Reintentos automáticos hasta cobrar</span
+                  >
+                  <div class="retry-success-msg" id="retrySuccessMsg">
+                    ¡Listo! 🎉
+                  </div>
+                </div>
+                <ul class="slide-features">
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Tarjetas de crédito y débito aceptadas</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Olvídate de perseguir pagos</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-visual">
+                <div class="device-phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen dark-bg">
+                    <div class="mock-payment">
+                      <div class="pay-header">
+                        <span>💳 Domiciliar Pago</span
+                        ><span class="secure">🔒</span>
+                      </div>
+                      <div class="credit-card-mock">
+                        <div class="cc-chip"></div>
+                        <div class="cc-num">•••• •••• •••• 4242</div>
+                        <div class="cc-info">
+                          <span>M. GONZÁLEZ</span><span>12/28</span>
+                        </div>
+                      </div>
+                      <div class="pay-details">
+                        <div class="pd-row">
+                          <span>Concepto</span><span>Colegiatura</span>
+                        </div>
+                        <div class="pd-row">
+                          <span>Monto</span><span>$1,600 MXN</span>
+                        </div>
+                      </div>
+                      <div class="pay-btn">
+                        <span class="pb-check">✓</span
+                        ><span>Activar Domiciliación</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 4: Cobro -->
+            <div class="workflow-slide" data-slide="4">
+              <div class="slide-content">
+                <div class="slide-number">04</div>
+                <h3 class="slide-title">Cobro Automático</h3>
+                <p class="slide-desc">
+                  Los días 1-5 de cada mes, el sistema procesa automáticamente
+                  las colegiaturas. Sin intervención manual.
+                </p>
+                <ul class="slide-features">
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Cobro días 1-5 del mes</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Comprobante PDF automático</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>95% mejora en flujo de efectivo</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-visual">
+                <div class="calendar-mock">
+                  <div class="cal-header">Septiembre 2025</div>
+                  <div class="cal-grid">
+                    <span class="cal-h">L</span><span class="cal-h">M</span
+                    ><span class="cal-h">M</span><span class="cal-h">J</span
+                    ><span class="cal-h">V</span><span class="cal-h">S</span
+                    ><span class="cal-h">D</span>
+                    <span class="cal-d cobro" data-day="1">1</span>
+                    <span class="cal-d cobro" data-day="2">2</span>
+                    <span class="cal-d cobro" data-day="3">3</span>
+                    <span class="cal-d cobro" data-day="4">4</span>
+                    <span class="cal-d cobro" data-day="5">5</span>
+                    <span class="cal-d">6</span>
+                    <span class="cal-d">7</span>
+                    <span class="cal-d">8</span><span class="cal-d">9</span
+                    ><span class="cal-d">10</span><span class="cal-d">11</span
+                    ><span class="cal-d">12</span><span class="cal-d">13</span
+                    ><span class="cal-d">14</span>
+                  </div>
+                  <div class="cal-legend">
+                    <div class="legend-dot"></div>
+                    <span>Días de cobro automático</span>
+                  </div>
+                  <div class="calendar-success-msg" id="calendarSuccessMsg">
+                    <span class="success-emoji">🎉</span>
+                    <span class="success-text">¡Cobrado!</span>
+                  </div>
+                </div>
+                <div class="toast-notif" id="paymentToast">
+                  <span class="toast-icon">💳</span>
+                  <div class="toast-body">
+                    <strong>Pago procesado</strong
+                    ><span>Colegiatura Sept - $1,600 MXN</span>
+                  </div>
+                  <span class="toast-check">✓</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 5: Push Preventivo -->
+            <div class="workflow-slide" data-slide="5">
+              <div class="slide-content">
+                <div class="slide-number">05</div>
+                <h3 class="slide-title">Recordatorio Preventivo</h3>
+                <p class="slide-desc">
+                  Antes de fechas límite, el sistema envía notificaciones
+                  automáticas para prevenir morosidad.
+                </p>
+                <ul class="slide-features">
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>3 días antes del vencimiento</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Notificaciones + Correo</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Reduce morosidad 60%</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-visual">
+                <div class="device-phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen dark-bg">
+                    <div class="mock-statusbar">
+                      <span id="notifTime1">9:41</span><span>📶 🔋</span>
+                    </div>
+                    <div class="mock-notifs" id="preventiveNotifs">
+                      <div class="m-notif preventive" data-delay="0">
+                        <span class="mn-icon">🔔</span>
+                        <div class="mn-body">
+                          <strong>Recordatorio de pago</strong>
+                          <span>Tu colegiatura vence en 3 días</span>
+                        </div>
+                        <div class="mn-meta">
+                          <span class="mn-date">28 Nov</span>
+                          <span class="mn-time">Ahora</span>
+                        </div>
+                      </div>
+                      <div class="m-notif preventive" data-delay="1">
+                        <span class="mn-icon">📚</span>
+                        <div class="mn-body">
+                          <strong>Tarea pendiente</strong>
+                          <span>Cuadro comparativo - Vence mañana</span>
+                        </div>
+                        <div class="mn-meta">
+                          <span class="mn-date">28 Nov</span>
+                          <span class="mn-time">10:30</span>
+                        </div>
+                      </div>
+                      <div class="m-notif preventive" data-delay="2">
+                        <span class="mn-icon">📝</span>
+                        <div class="mn-body">
+                          <strong>Examen próximo</strong>
+                          <span>Biología Celular - 2 días</span>
+                        </div>
+                        <div class="mn-meta">
+                          <span class="mn-date">27 Nov</span>
+                          <span class="mn-time">14:00</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 6: Push Correctivo -->
+            <div class="workflow-slide" data-slide="6">
+              <div class="slide-content">
+                <div class="slide-number">06</div>
+                <h3 class="slide-title">Escalamiento Correctivo</h3>
+                <p class="slide-desc">
+                  Si hay mora o actividades vencidas, el sistema intensifica la
+                  comunicación automáticamente.
+                </p>
+                <ul class="slide-features">
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Escalamiento automático</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Notifica a padres/tutores</span>
+                  </li>
+                  <li>
+                    <svg
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline></svg
+                    ><span>Enlace de pago directo</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="slide-visual">
+                <div class="device-phone">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen dark-bg">
+                    <div class="mock-statusbar">
+                      <span id="notifTime2">9:41</span><span>📶 🔋</span>
+                    </div>
+                    <div class="mock-notifs" id="correctiveNotifs">
+                      <div class="m-notif corrective urgent" data-delay="0">
+                        <span class="mn-icon">⚠️</span>
+                        <div class="mn-body">
+                          <strong>Pago vencido</strong>
+                          <span>Colegiatura atrasada - Regulariza →</span>
+                        </div>
+                        <div class="mn-meta">
+                          <span class="mn-date">2 Dic</span>
+                          <span class="mn-time">Ahora</span>
+                        </div>
+                      </div>
+                      <div class="m-notif corrective" data-delay="1">
+                        <span class="mn-icon">👨‍👩‍👧</span>
+                        <div class="mn-body">
+                          <strong>Aviso a tutor</strong>
+                          <span>Se notificó a padres sobre adeudo</span>
+                        </div>
+                        <div class="mn-meta">
+                          <span class="mn-date">2 Dic</span>
+                          <span class="mn-time">11:00</span>
+                        </div>
+                      </div>
+                      <div class="m-notif corrective" data-delay="2">
+                        <span class="mn-icon">📄</span>
+                        <div class="mn-body">
+                          <strong>Actividad vencida</strong>
+                          <span>Contacta a tu mentor</span>
+                        </div>
+                        <div class="mn-meta">
+                          <span class="mn-date">1 Dic</span>
+                          <span class="mn-time">09:15</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="escalation-bar">
+                  <span class="esc-lvl" data-level="1">Día 1</span>
+                  <span class="esc-arr">→</span>
+                  <span class="esc-lvl" data-level="2">Día 3</span>
+                  <span class="esc-arr">→</span>
+                  <span class="esc-lvl" data-level="3">Día 7+</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EMBUDO (antes Pipeline) ========== -->
+    <section class="embudo-section" id="embudo">
+      <div class="embudo-container">
+        <div class="embudo-header">
+          <span class="section-badge">IMPACTO REAL</span>
+          <h2 class="section-title">
+            El embudo que <span class="title-gradient">transforma</span>
+          </h2>
+          <p class="section-desc">
+            Observa cómo mejoran las métricas desde la inscripción hasta la
+            graduación
+          </p>
+        </div>
+
+        <div class="embudo-grid">
+          <div class="embudo-card" data-stage="1">
+            <div class="e-node">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 6v6l4 2"></path>
+              </svg>
+              <div class="e-ring"></div>
+            </div>
+            <div class="e-label">COBRANZA</div>
+            <div class="e-metrics">
+              <div class="em before">
+                <span class="em-val" data-target="60">0</span>%<span
+                  class="em-tag"
+                  >Antes</span
+                >
+              </div>
+              <div class="em-arrow">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div class="em after">
+                <span class="em-val" data-target="92">0</span>%<span
+                  class="em-tag"
+                  >Después</span
+                >
+              </div>
+            </div>
+            <p class="e-desc">Efectividad en cobro de colegiaturas</p>
+          </div>
+
+          <div class="embudo-card" data-stage="2">
+            <div class="e-node">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <div class="e-ring"></div>
+            </div>
+            <div class="e-label">RETENCIÓN</div>
+            <div class="e-metrics">
+              <div class="em before">
+                <span class="em-val" data-target="72">0</span>%<span
+                  class="em-tag"
+                  >Antes</span
+                >
+              </div>
+              <div class="em-arrow">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div class="em after">
+                <span class="em-val" data-target="94">0</span>%<span
+                  class="em-tag"
+                  >Después</span
+                >
+              </div>
+            </div>
+            <p class="e-desc">Alumnos que permanecen activos</p>
+          </div>
+
+          <div class="embudo-card warning" data-stage="3">
+            <div class="e-node warning">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M23 6l-9.5 9.5-5-5L1 18"></path>
+              </svg>
+              <div class="e-ring"></div>
+            </div>
+            <div class="e-label">DESERCIÓN</div>
+            <div class="e-metrics inverted">
+              <div class="em before bad">
+                <span class="em-val" data-target="28">0</span>%<span
+                  class="em-tag"
+                  >Antes</span
+                >
+              </div>
+              <div class="em-arrow">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div class="em after good">
+                <span class="em-val" data-target="6">0</span>%<span
+                  class="em-tag"
+                  >Después</span
+                >
+              </div>
+            </div>
+            <p class="e-desc">Reducción drástica de bajas</p>
+          </div>
+
+          <div class="embudo-card success" data-stage="4">
+            <div class="e-node success">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+              <div class="e-ring"></div>
+            </div>
+            <div class="e-label">GRADUACIÓN</div>
+            <div class="e-metrics">
+              <div class="em before">
+                <span class="em-val" data-target="68">0</span>%<span
+                  class="em-tag"
+                  >Antes</span
+                >
+              </div>
+              <div class="em-arrow">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </div>
+              <div class="em after">
+                <span class="em-val" data-target="91">0</span>%<span
+                  class="em-tag"
+                  >Después</span
+                >
+              </div>
+            </div>
+            <p class="e-desc">Tasa de graduación exitosa</p>
+          </div>
+        </div>
+
+        <div class="value-props">
+          <div class="vp-item">
+            <span class="vp-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </span>
+            <div>
+              <strong>Tu marca, tu app</strong
+              ><span>Logos y colores de tu institución</span>
+            </div>
+          </div>
+          <div class="vp-item">
+            <span class="vp-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="3"></circle>
+                <path
+                  d="M12 1v6m0 6v6M5.64 5.64l4.24 4.24m4.24 4.24l4.24 4.24M1 12h6m6 0h6M5.64 18.36l4.24-4.24m4.24-4.24l4.24-4.24"
+                ></path>
+              </svg>
+            </span>
+            <div>
+              <strong>Tu depto de tecnología</strong
+              ><span>Soporte y mejoras continuas</span>
+            </div>
+          </div>
+          <div class="vp-item">
+            <span class="vp-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <path
+                  d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"
+                ></path>
+                <path d="M2 12h20"></path>
+              </svg>
+            </span>
+            <div>
+              <strong>Ecosistema integral</strong
+              ><span>Financiero, académico y expediente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TESTIMONIOS ========== -->
+    <section class="testimonials-section" id="testimonios">
+      <div class="testimonials-container">
+        <div class="testimonials-header">
+          <span class="section-badge">Testimonios</span>
+          <h2 class="section-title">
+            Lo que dicen nuestros <span class="title-gradient">clientes</span>
+          </h2>
+          <p class="section-desc">
+            Empresas que transformaron su cobranza con GEASIS
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonio 1 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">María González</h4>
+                <p class="testimonial-role">
+                  Directora de Finanzas • TechCorp LATAM
+                </p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Desde que implementamos GEASIS, nuestra tasa de recuperación
+              aumentó un 42% y redujimos el tiempo de gestión en más de la
+              mitad. La IA predictiva es impresionante."
+            </p>
+            <div class="testimonial-metric">
+              <span class="metric-value">+42%</span>
+              <span class="metric-label">Recuperación</span>
+            </div>
+          </div>
+
+          <!-- Testimonio 2 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Carlos Mendoza</h4>
+                <p class="testimonial-role">CFO • Retail Innovación</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "La automatización multicanal nos permitió escalar sin contratar
+              más personal. Los mensajes personalizados por IA mejoraron nuestra
+              relación con los clientes."
+            </p>
+            <div class="testimonial-metric">
+              <span class="metric-value">-65%</span>
+              <span class="metric-label">Costos Operativos</span>
+            </div>
+          </div>
+
+          <!-- Testimonio 3 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Ana Ramírez</h4>
+                <p class="testimonial-role">
+                  Gerente de Cobranza • FinServ México
+                </p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "El sistema de escalamiento inteligente es un game-changer. Ahora
+              nuestro equipo solo interviene en casos que realmente lo
+              necesitan. ROI positivo en 3 meses."
+            </p>
+            <div class="testimonial-metric">
+              <span class="metric-value">3 meses</span>
+              <span class="metric-label">ROI Positivo</span>
+            </div>
+          </div>
+
+          <!-- Testimonio 4 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Roberto Silva</h4>
+                <p class="testimonial-role">
+                  Director de Operaciones • SaaS Global
+                </p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "La integración con nuestro ERP fue impecable. Los dashboards en
+              tiempo real nos dan visibilidad total del flujo de caja.
+              Indispensable para cualquier empresa."
+            </p>
+            <div class="testimonial-metric">
+              <span class="metric-value">100%</span>
+              <span class="metric-label">Visibilidad</span>
+            </div>
+          </div>
+
+          <!-- Testimonio 5 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Patricia Torres</h4>
+                <p class="testimonial-role">VP Finanzas • E-commerce Plus</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "Lo que más valoramos es el enfoque preventivo. Ahora tenemos
+              menos cuentas vencidas porque la IA detecta el riesgo antes. Una
+              inversión que se paga sola."
+            </p>
+            <div class="testimonial-metric">
+              <span class="metric-value">-58%</span>
+              <span class="metric-label">Morosidad</span>
+            </div>
+          </div>
+
+          <!-- Testimonio 6 -->
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+              </div>
+              <div class="testimonial-info">
+                <h4 class="testimonial-name">Jorge Vargas</h4>
+                <p class="testimonial-role">CEO • Proptech Solutions</p>
+              </div>
+            </div>
+            <div class="testimonial-stars">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <p class="testimonial-text">
+              "GEASIS es la herramienta que faltaba en nuestro stack
+              tecnológico. El soporte es excelente y las actualizaciones
+              constantes mejoran el producto cada mes."
+            </p>
+            <div class="testimonial-metric">
+              <span class="metric-value">5/5</span>
+              <span class="metric-label">Satisfacción</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logos de empresas -->
+        <div class="testimonials-logos">
+          <p class="logos-title">Empresas que confían en GEASIS</p>
+          <div class="logos-carousel">
+            <div class="logos-track">
+              <!-- Logo 1: TechCorp -->
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <rect
+                    x="10"
+                    y="10"
+                    width="20"
+                    height="20"
+                    rx="4"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    TechCorp
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 2: RetailPro -->
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="10" fill="currentColor" />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    RetailPro
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 3: FinServ -->
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15,10 L25,10 L20,25 L15,10 M20,25 L25,30 M15,10 L20,15"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    FinServ
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 4: SaaS Global -->
+              <div class="logo-item">
+                <svg viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                  <polygon
+                    points="20,10 30,20 20,30 10,20"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    SaaS Global
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 5: E-Plus -->
+              <div class="logo-item">
+                <svg viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+                  <rect
+                    x="12"
+                    y="12"
+                    width="16"
+                    height="16"
+                    rx="8"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    E-Plus
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 6: PropTech -->
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20,25 L20,15 L15,20 L20,25 L25,20 L20,15"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    PropTech
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 7: DataFlow -->
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <line
+                    x1="10"
+                    y1="20"
+                    x2="30"
+                    y2="20"
+                    stroke="currentColor"
+                    stroke-width="3"
+                  />
+                  <circle cx="30" cy="20" r="3" fill="currentColor" />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    DataFlow
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 8: CloudNet -->
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15,22 Q15,15 20,15 Q25,15 25,18 Q30,15 30,20 Q30,25 20,25 Q10,25 15,22Z"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    CloudNet
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 9: InnovaTech -->
+              <div class="logo-item">
+                <svg viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                  <polygon
+                    points="20,10 25,20 20,30 15,20"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    InnovaTech
+                  </text>
+                </svg>
+              </div>
+              <!-- Logo 10: PayFlow -->
+              <div class="logo-item">
+                <svg viewBox="0 0 110 40" xmlns="http://www.w3.org/2000/svg">
+                  <rect
+                    x="10"
+                    y="15"
+                    width="20"
+                    height="10"
+                    rx="2"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    PayFlow
+                  </text>
+                </svg>
+              </div>
+
+              <!-- Duplicados para loop infinito -->
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <rect
+                    x="10"
+                    y="10"
+                    width="20"
+                    height="20"
+                    rx="4"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    TechCorp
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="10" fill="currentColor" />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    RetailPro
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15,10 L25,10 L20,25 L15,10 M20,25 L25,30 M15,10 L20,15"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    fill="none"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    FinServ
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                  <polygon
+                    points="20,10 30,20 20,30 10,20"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    SaaS Global
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 100 40" xmlns="http://www.w3.org/2000/svg">
+                  <rect
+                    x="12"
+                    y="12"
+                    width="16"
+                    height="16"
+                    rx="8"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    E-Plus
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M20,25 L20,15 L15,20 L20,25 L25,20 L20,15"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    PropTech
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <line
+                    x1="10"
+                    y1="20"
+                    x2="30"
+                    y2="20"
+                    stroke="currentColor"
+                    stroke-width="3"
+                  />
+                  <circle cx="30" cy="20" r="3" fill="currentColor" />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    DataFlow
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M15,22 Q15,15 20,15 Q25,15 25,18 Q30,15 30,20 Q30,25 20,25 Q10,25 15,22Z"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    CloudNet
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 140 40" xmlns="http://www.w3.org/2000/svg">
+                  <polygon
+                    points="20,10 25,20 20,30 15,20"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    InnovaTech
+                  </text>
+                </svg>
+              </div>
+              <div class="logo-item">
+                <svg viewBox="0 0 110 40" xmlns="http://www.w3.org/2000/svg">
+                  <rect
+                    x="10"
+                    y="15"
+                    width="20"
+                    height="10"
+                    rx="2"
+                    fill="currentColor"
+                  />
+                  <text
+                    x="40"
+                    y="25"
+                    font-family="Arial, sans-serif"
+                    font-size="16"
+                    font-weight="700"
+                    fill="currentColor"
+                  >
+                    PayFlow
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MÓDULOS ERP ========== -->
+    <section class="modules-section" id="modulos">
+      <div class="modules-container">
+        <div class="modules-header">
+          <span class="section-badge">MÓDULOS ERP</span>
+          <h2 class="section-title">
+            Tres pilares.<br /><span class="title-gradient"
+              >Una solución completa.</span
+            >
+          </h2>
+          <p class="section-desc">
+            Gestión integral desde la admisión hasta el seguimiento académico
+            personalizado.
+          </p>
+        </div>
+
+        <div class="modules-grid">
+          <!-- Módulo 1: Admisiones -->
+          <div class="module-card" data-module="admisiones">
+            <div class="module-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="8.5" cy="7" r="4"></circle>
+                <polyline points="17 11 19 13 23 9"></polyline>
+              </svg>
+            </div>
+            <h3 class="module-title">Admisiones</h3>
+            <p class="module-desc">
+              Automatiza todo el proceso de inscripción, desde el registro hasta
+              la generación de documentos.
+            </p>
+            <button class="module-btn">
+              <span>Ver detalles</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Módulo 2: Administrativo -->
+          <div class="module-card" data-module="administrativo">
+            <div class="module-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="9" x2="15" y2="9"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+                <line x1="9" y1="12" x2="15" y2="12"></line>
+              </svg>
+            </div>
+            <h3 class="module-title">Administrativo</h3>
+            <p class="module-desc">
+              Control financiero completo: cobranza, pagos, facturación y
+              reportes en tiempo real.
+            </p>
+            <button class="module-btn">
+              <span>Ver detalles</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+
+          <!-- Módulo 3: Mentoría -->
+          <div class="module-card" data-module="mentoria">
+            <div class="module-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3 class="module-title">Mentoría</h3>
+            <p class="module-desc">
+              Seguimiento académico personalizado con alertas tempranas y
+              análisis predictivo de rendimiento.
+            </p>
+            <button class="module-btn">
+              <span>Ver detalles</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MODAL UNIFICADO CON CARRUSEL ========== -->
+    <div id="moduleModal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="9" y1="3" x2="9" y2="21"></line>
+            </svg>
+          </div>
+          <h2>Módulo</h2>
+          <p>Descripción del módulo</p>
+        </div>
+
+        <div class="modal-body">
+          <!-- Carrusel de imágenes -->
+          <div class="modal-image-carousel">
+            <div class="carousel-track"></div>
+            <button class="carousel-nav prev" aria-label="Imagen anterior">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="15 18 9 12 15 6"></polyline>
+              </svg>
+            </button>
+            <button class="carousel-nav next" aria-label="Imagen siguiente">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </button>
+            <div class="carousel-counter">1 / 1</div>
+            <div class="carousel-controls"></div>
+          </div>
+
+          <!-- Características -->
+          <div class="modal-features">
+            <h3>Características principales</h3>
+            <ul></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== MODALES ========== -->
+    <!-- Modal Admisiones -->
+    <div class="modal-overlay" id="modal-admisiones">
+      <div class="modal-content">
+        <button class="modal-close">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="8.5" cy="7" r="4"></circle>
+              <polyline points="17 11 19 13 23 9"></polyline>
+            </svg>
+          </div>
+          <h2>Módulo de Admisiones</h2>
+          <p>Digitaliza y automatiza todo el proceso de inscripción</p>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-image">
+            <img src="#" alt="Módulo de Admisiones" />
+          </div>
+
+          <div class="modal-features">
+            <h3>Características principales</h3>
+            <ul>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Registro en línea con formularios inteligentes y
+                  validación</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Generación automática de credenciales y solicitudes en
+                  PDF</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Expediente digital completo desde el primer contacto</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Portal para padres con acceso inmediato a documentación</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Seguimiento de estatus en tiempo real (pendiente, aceptado,
+                  rechazado)</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Administrativo -->
+    <div class="modal-overlay" id="modal-administrativo">
+      <div class="modal-content">
+        <button class="modal-close">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="9" y1="9" x2="15" y2="9"></line>
+              <line x1="9" y1="15" x2="15" y2="15"></line>
+              <line x1="9" y1="12" x2="15" y2="12"></line>
+            </svg>
+          </div>
+          <h2>Módulo Administrativo</h2>
+          <p>Control financiero y operativo centralizado</p>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-image">
+            <img src="#" alt="Módulo Administrativo" />
+          </div>
+
+          <div class="modal-features">
+            <h3>Características principales</h3>
+            <ul>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Cobranza automatizada con recordatorios multicanal</span>
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Domiciliación de pagos con integración a pasarelas</span>
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Facturación electrónica y timbrado automático</span>
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Dashboards financieros con proyecciones y alertas</span>
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Gestión de bolsas de pago y planes de financiamiento</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Mentoría -->
+    <div class="modal-overlay" id="modal-mentoria">
+      <div class="modal-content">
+        <button class="modal-close">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-header">
+          <div class="modal-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h2>Módulo de Mentoría</h2>
+          <p>Seguimiento académico inteligente y personalizado</p>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-image">
+            <img src="#" alt="Módulo de Mentoría" />
+          </div>
+
+          <div class="modal-features">
+            <h3>Características principales</h3>
+            <ul>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>IA predictiva que detecta riesgo académico temprano</span>
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Alertas automáticas a padres y tutores sobre bajo
+                  rendimiento</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span>Planes de intervención personalizados por alumno</span>
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Seguimiento de asistencia y comportamiento en tiempo
+                  real</span
+                >
+              </li>
+              <li>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+                <span
+                  >Reportes de progreso automatizados para padres y
+                  maestros</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== SECCIÓN DE PERSONALIZACIÓN ========== -->
+    <section class="branding-section" id="personalizacion">
+      <div class="branding-container">
+        <div class="branding-header">
+          <span class="section-badge">PERSONALIZACIÓN TOTAL</span>
+          <h2 class="section-title">
+            Tu marca, tu identidad,
+            <span class="title-gradient">tu sistema</span>
+          </h2>
+          <p class="section-desc">
+            GEASIS se adapta completamente a la imagen de tu institución. Logo,
+            colores y marca presente en cada pantalla, reporte y documento.
+          </p>
+        </div>
+
+        <!-- Grid de Mockups -->
+        <!--
+        <div class="branding-grid">
+          <div class="branding-mockup" data-mockup="dashboard">
+            <div class="mockup-wrapper">
+              <div class="mockup-image">
+                <img
+                  src="assets/images/mockups/dashboard.svg"
+                  alt="Dashboard Principal"
+                />
+              </div>
+              <div class="mockup-label">
+                <h4>Dashboard Principal</h4>
+                <p>Tu logo en la navegación principal</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="branding-mockup" data-mockup="mobile">
+            <div class="mockup-wrapper">
+              <div class="mockup-image">
+                <img src="assets/images/mockups/app.svg" alt="App Móvil" />
+              </div>
+              <div class="mockup-label">
+                <h4>App Móvil</h4>
+                <p>Splash screen y header personalizados</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="branding-mockup" data-mockup="solicitud">
+            <div class="mockup-wrapper">
+              <div class="mockup-image">
+                <img
+                  src="assets/images/mockups/solicitud.svg"
+                  alt="Solicitud de Inscripción"
+                />
+              </div>
+              <div class="mockup-label">
+                <h4>Solicitud de Inscripción</h4>
+                <p>Documentos oficiales con tu marca</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="branding-mockup" data-mockup="login">
+            <div class="mockup-wrapper">
+              <div class="mockup-image">
+                <img
+                  src="assets/images/mockups/login.svg"
+                  alt="Login Desktop"
+                />
+              </div>
+              <div class="mockup-label">
+                <h4>Portal de Acceso</h4>
+                <p>Login personalizado con tu identidad</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        -->
+
+        <!-- Features de Personalización -->
+        <div class="branding-features">
+          <div class="branding-feature-item">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <path d="M9 3v18"></path>
+                <path d="M15 3v18"></path>
+              </svg>
+            </div>
+            <h4>Logo en todas las interfaces</h4>
+            <p>Tu marca presente en cada pantalla del sistema</p>
+          </div>
+
+          <div class="branding-feature-item">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="6"></circle>
+                <circle cx="12" cy="12" r="2"></circle>
+              </svg>
+            </div>
+            <h4>Colores personalizados</h4>
+            <p>Paleta de colores adaptada a tu identidad</p>
+          </div>
+
+          <div class="branding-feature-item">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+              </svg>
+            </div>
+            <h4>Marca en documentos</h4>
+            <p>Reportes, boletas y certificados con tu logo</p>
+          </div>
+
+          <div class="branding-feature-item">
+            <div class="feature-icon">
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              </svg>
+            </div>
+            <h4>App móvil branded</h4>
+            <p>Aplicación con la identidad de tu institución</p>
+          </div>
+        </div>
+
+        <!-- CTA para personalización -->
+        <div class="branding-cta">
+          <h3>¿Quieres ver cómo se vería con tu logo?</h3>
+          <p>
+            Agenda una demo personalizada y te mostraremos GEASIS con la
+            identidad de tu institución
+          </p>
+          <button class="btn-primary" id="btnPersonalizedDemo">
+            Ver mi demo personalizada
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MODAL DE PERSONALIZACIÓN ========== -->
+    <div class="personalization-modal-overlay" id="personalizationModal">
+      <div class="personalization-modal-content">
+        <button
+          class="personalization-modal-close"
+          id="closePersonalizationModal"
+          aria-label="Cerrar"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="personalization-modal-header">
+          <div class="modal-icon">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+              <path d="M9 3v18"></path>
+              <path d="M15 3v18"></path>
+              <path d="M3 9h18"></path>
+              <path d="M3 15h18"></path>
+            </svg>
+          </div>
+          <h2>Personaliza tu Vista Previa</h2>
+          <p>
+            Sube el logo de tu institución y opcionalmente agrega el nombre para
+            ver cómo se vería GEASIS con tu marca
+          </p>
+        </div>
+
+        <div class="personalization-modal-body">
+          <!-- Input para nombre -->
+          <div class="personalization-form-group">
+            <label for="institutionName"
+              >Nombre de tu Institución (Opcional) -
+              <b>Máximo: 8 caracteres</b></label
+            >
+            <input
+              type="text"
+              id="institutionName"
+              placeholder="Ej: Colegio Benito Juárez"
+              maxlength="50"
+            />
+            <small class="form-helper"
+              >Debe ser un logo cuadrado para que lo puedas complementar con el
+              nombre</small
+            >
+          </div>
+
+          <!-- Upload de logo -->
+          <div class="personalization-form-group">
+            <label>Logo de tu Institución *</label>
+            <div class="logo-upload-area" id="logoUploadArea">
+              <input
+                type="file"
+                id="logoUpload"
+                accept="image/png, image/jpeg, image/jpg, image/svg+xml"
+                hidden
+              />
+              <div class="upload-placeholder" id="uploadPlaceholder">
+                <svg
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <polyline points="17 8 12 3 7 8"></polyline>
+                  <line x1="12" y1="3" x2="12" y2="15"></line>
+                </svg>
+                <p><strong>Click para subir</strong> o arrastra tu logo aquí</p>
+                <span>PNG, JPG o SVG (máx. 2MB)</span>
+              </div>
+              <div
+                class="upload-preview"
+                id="uploadPreview"
+                style="display: none"
+              >
+                <img src="" alt="Logo preview" id="logoPreviewImg" />
+                <button class="remove-logo" id="removeLogo" type="button">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botones de preview -->
+          <div
+            class="preview-buttons-container"
+            id="previewButtonsContainer"
+            style="display: none"
+          >
+            <!-- Se llenará dinámicamente -->
+          </div>
+
+          <!-- NUEVO: Botón para solicitar demo -->
+          <div class="personalization-cta-section">
+            <button
+              class="btn-request-demo"
+              id="btnRequestDemoFromPersonalization"
+            >
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                ></path>
+              </svg>
+              <span>Solicitar Demostración</span>
+            </button>
+            <p class="personalization-cta-text">
+              ¿Te gustó lo que viste? Solicita una demostración personalizada
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== MODAL DE PREVIEW ========== -->
+    <div class="personalization-modal-overlay" id="previewModal">
+      <div class="personalization-modal-content preview-modal-large">
+        <button
+          class="personalization-modal-close"
+          id="closePreviewModal"
+          aria-label="Cerrar"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="personalization-modal-body">
+          <div id="previewModalImage" class="preview-modal-image-container">
+            <!-- La imagen con el logo se cargará dinámicamente -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========== PLATAFORMA ========== -->
+    <section class="platform-section" id="plataforma">
+      <div class="platform-container">
+        <div class="platform-header">
+          <span class="section-badge">ECOSISTEMA COMPLETO</span>
+          <h2 class="section-title">
+            Todo en tu mano.<br /><span class="title-gradient"
+              >Vinculado al ERP.</span
+            >
+          </h2>
+          <p class="section-desc">
+            Un ecosistema educativo completo sincronizado en tiempo real.
+          </p>
+        </div>
+
+        <div class="erp-grid">
+          <div class="erp-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+            </svg>
+            <h4>Métricas</h4>
+            <p>Tableros en tiempo real</p>
+          </div>
+          <div class="erp-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="9 11 12 14 22 4"></polyline>
+              <path
+                d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"
+              ></path>
+            </svg>
+            <h4>Asistencia</h4>
+            <p>Control automatizado</p>
+          </div>
+          <div class="erp-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <h4>Planeación</h4>
+            <p>Logística académica</p>
+          </div>
+          <div class="erp-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+              <polyline points="17 6 23 6 23 12"></polyline>
+            </svg>
+            <h4>Proyecciones</h4>
+            <p>Análisis predictivo</p>
+          </div>
+          <div class="erp-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="12" y1="1" x2="12" y2="23"></line>
+              <path
+                d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+              ></path>
+            </svg>
+            <h4>Bolsas de Pago</h4>
+            <p>Gestión financiera</p>
+          </div>
+          <div class="erp-item">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="23 4 23 10 17 10"></polyline>
+              <polyline points="1 20 1 14 7 14"></polyline>
+              <path
+                d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+              ></path>
+            </svg>
+            <h4>Recuperaciones</h4>
+            <p>Seguimiento automático</p>
+          </div>
+        </div>
+
+        <!-- STORES CTA -->
+        <div class="stores-cta">
+          <h3>Descarga GEASIS en tu dispositivo</h3>
+          <p>
+            Gestiona tu cobranza desde cualquier lugar, en cualquier momento
+          </p>
+          <div class="store-btns">
+            <a href="#" class="store-btn">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+                />
+              </svg>
+              <div>
+                <span class="store-label">Descarga en</span>
+                <span class="store-name">App Store</span>
+              </div>
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.appmobileende&pcampaignid=web_share"
+              class="store-btn"
+              target="_blank"
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"
+                />
+              </svg>
+              <div>
+                <span class="store-label">Disponible en</span>
+                <span class="store-name">Google Play</span>
+              </div>
+            </a>
+            <a
+              href="https://appgallery.huawei.com/app/C116381251"
+              class="store-btn"
+              target="_blank"
+            >
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M16.59,7.58L10,14.17L7.41,11.59L6,13L10,17L18,9L16.59,7.58Z"
+                />
+              </svg>
+              <div>
+                <span class="store-label">Consíguelo en</span>
+                <span class="store-name">AppGallery</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== APP MOBILE ========== -->
+    <section class="app-section" id="app-movil">
+      <div class="app-container">
+        <div class="app-header">
+          <span class="section-badge">APP MÓVIL</span>
+          <h2 class="section-title">
+            Toda la gestión escolar<br /><span class="title-gradient"
+              >en tu bolsillo.</span
+            >
+          </h2>
+          <p class="section-desc">
+            Una aplicación móvil intuitiva que conecta a estudiantes, padres y
+            docentes con toda la información académica en tiempo real.
+          </p>
+        </div>
+
+        <!-- LOS TABS SE GENERAN DINÁMICAMENTE VÍA JAVASCRIPT -->
+
+        <div class="app-features">
+          <!-- FEATURE 1: PAGOS -->
+          <div class="app-feature" data-feature="pagos">
+            <div class="app-feature-visual">
+              <div class="mobile-carousel" data-carousel="pagos">
+                <div class="mobile-frame">
+                  <div class="mobile-slides">
+                    <!-- Las imágenes se cargarán dinámicamente -->
+                  </div>
+                  <div class="mobile-counter">1 / 2</div>
+                </div>
+                <!-- Navegación -->
+                <button class="mobile-nav prev" aria-label="Anterior">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button class="mobile-nav next" aria-label="Siguiente">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <!-- Dots -->
+                <div class="mobile-controls">
+                  <!-- Se generarán dinámicamente -->
+                </div>
+              </div>
+            </div>
+
+            <div class="app-feature-content">
+              <span class="app-feature-badge">MÓDULO DE PAGOS</span>
+              <h3 class="app-feature-title">
+                Gestiona tus <span class="highlight">pagos escolares</span>
+              </h3>
+              <p class="app-feature-desc">
+                Realiza pagos de colegiaturas, inscripciones y servicios
+                adicionales de forma segura. Consulta tu historial de pagos y
+                recibe notificaciones de vencimientos próximos.
+              </p>
+              <ul class="app-feature-list">
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Pagos en línea seguros con múltiples métodos</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Historial completo de transacciones</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Notificaciones de fechas de vencimiento</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Descarga de comprobantes fiscales</span>
+                </li>
+              </ul>
+              <div class="app-stats">
+                <div class="app-stat">
+                  <span class="app-stat-value">100%</span>
+                  <span class="app-stat-label">Seguro</span>
+                </div>
+                <div class="app-stat">
+                  <span class="app-stat-value">24/7</span>
+                  <span class="app-stat-label">Disponible</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEATURE 2: EXPEDIENTE -->
+          <div class="app-feature" data-feature="expediente">
+            <div class="app-feature-visual">
+              <div class="mobile-carousel" data-carousel="expediente">
+                <div class="mobile-frame">
+                  <div class="mobile-slides">
+                    <!-- Las imágenes se cargarán dinámicamente -->
+                  </div>
+                  <div class="mobile-counter">1 / 3</div>
+                </div>
+                <button class="mobile-nav prev" aria-label="Anterior">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="15 18 9 12 15 6"></polyline>
+                  </svg>
+                </button>
+                <button class="mobile-nav next" aria-label="Siguiente">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="9 18 15 12 9 6"></polyline>
+                  </svg>
+                </button>
+                <div class="mobile-controls"></div>
+              </div>
+            </div>
+
+            <div class="app-feature-content">
+              <span class="app-feature-badge">EXPEDIENTE ACADÉMICO</span>
+              <h3 class="app-feature-title">
+                Tu <span class="highlight">historial académico</span> completo
+              </h3>
+              <p class="app-feature-desc">
+                Accede a toda la información académica del estudiante: datos
+                personales, historial de calificaciones, asistencias, conducta y
+                documentos importantes en un solo lugar.
+              </p>
+              <ul class="app-feature-list">
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Información personal y de contacto actualizada</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Historial académico completo por ciclo escolar</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Documentos digitalizados y certificados</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Registro de asistencias y puntualidad</span>
+                </li>
+              </ul>
+              <div class="app-stats">
+                <div class="app-stat">
+                  <span class="app-stat-value">100%</span>
+                  <span class="app-stat-label">Digital</span>
+                </div>
+                <div class="app-stat">
+                  <span class="app-stat-value">Seguro</span>
+                  <span class="app-stat-label">Encriptado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEATURE 3: CALIFICACIONES -->
+          <div class="app-feature" data-feature="calificaciones">
+            <div class="app-feature-visual">
+              <div class="mobile-carousel" data-carousel="calificaciones">
+                <div class="mobile-frame">
+                  <div class="mobile-slides">
+                    <!-- Las imágenes se cargarán dinámicamente -->
+                  </div>
+                  <div class="mobile-counter">1 / 1</div>
+                </div>
+                <div class="mobile-controls"></div>
+              </div>
+            </div>
+
+            <div class="app-feature-content">
+              <span class="app-feature-badge">CALIFICACIONES</span>
+              <h3 class="app-feature-title">
+                Seguimiento <span class="highlight">en tiempo real</span>
+              </h3>
+              <p class="app-feature-desc">
+                Consulta las calificaciones de todas las materias actualizadas
+                en tiempo real. Visualiza el promedio general, por materia y
+                recibe alertas de materias en riesgo.
+              </p>
+              <ul class="app-feature-list">
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Calificaciones actualizadas por parcial</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Promedios generales y por materia</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Gráficas de rendimiento académico</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Alertas de materias en riesgo de reprobar</span>
+                </li>
+              </ul>
+              <div class="app-stats">
+                <div class="app-stat">
+                  <span class="app-stat-value">Instantáneo</span>
+                  <span class="app-stat-label">Actualización</span>
+                </div>
+                <div class="app-stat">
+                  <span class="app-stat-value">Visual</span>
+                  <span class="app-stat-label">Gráficas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEATURE 4: DOCUMENTACIÓN -->
+          <div class="app-feature" data-feature="documentacion">
+            <div class="app-feature-visual">
+              <div class="mobile-carousel" data-carousel="documentacion">
+                <div class="mobile-frame">
+                  <div class="mobile-slides">
+                    <!-- Las imágenes se cargarán dinámicamente -->
+                  </div>
+                  <div class="mobile-counter">1 / 1</div>
+                </div>
+                <div class="mobile-controls"></div>
+              </div>
+            </div>
+
+            <div class="app-feature-content">
+              <span class="app-feature-badge">DOCUMENTACIÓN</span>
+              <h3 class="app-feature-title">
+                <span class="highlight">Documentos oficiales</span> al instante
+              </h3>
+              <p class="app-feature-desc">
+                Solicita y descarga documentos oficiales como constancias,
+                certificados, boletas y credenciales directamente desde la app.
+                Sin necesidad de ir a la institución.
+              </p>
+              <ul class="app-feature-list">
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Solicitud en línea de documentos oficiales</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Descarga inmediata de boletas y constancias</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Credenciales digitales con código QR</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Validación digital de documentos</span>
+                </li>
+              </ul>
+              <div class="app-stats">
+                <div class="app-stat">
+                  <span class="app-stat-value">24hrs</span>
+                  <span class="app-stat-label">Entrega</span>
+                </div>
+                <div class="app-stat">
+                  <span class="app-stat-value">Digital</span>
+                  <span class="app-stat-label">Formato PDF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FEATURE 5: ACTIVIDADES -->
+          <div class="app-feature" data-feature="actividades">
+            <div class="app-feature-visual">
+              <div class="mobile-carousel" data-carousel="actividades">
+                <div class="mobile-frame">
+                  <div class="mobile-slides">
+                    <!-- Las imágenes se cargarán dinámicamente -->
+                  </div>
+                  <div class="mobile-counter">1 / 1</div>
+                </div>
+                <div class="mobile-controls"></div>
+              </div>
+            </div>
+
+            <div class="app-feature-content">
+              <span class="app-feature-badge">ACTIVIDADES</span>
+              <h3 class="app-feature-title">
+                Calendario <span class="highlight">académico completo</span>
+              </h3>
+              <p class="app-feature-desc">
+                Mantente al día con todas las actividades escolares: tareas,
+                exámenes, eventos, juntas y actividades extracurriculares.
+                Recibe recordatorios automáticos.
+              </p>
+              <ul class="app-feature-list">
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Calendario de tareas y exámenes</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Notificaciones de eventos próximos</span>
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span
+                    >Horarios de clases y actividades extracurriculares</span
+                  >
+                </li>
+                <li>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  <span>Sincronización con Google Calendar</span>
+                </li>
+              </ul>
+              <div class="app-stats">
+                <div class="app-stat">
+                  <span class="app-stat-value">Push</span>
+                  <span class="app-stat-label">Notificaciones</span>
+                </div>
+                <div class="app-stat">
+                  <span class="app-stat-value">Sync</span>
+                  <span class="app-stat-label">Automático</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ SECTION ========== -->
+    <section class="faq-section" id="preguntas-frecuentes">
+      <div class="faq-container">
+        <div class="faq-header">
+          <span class="section-badge">PREGUNTAS FRECUENTES</span>
+          <h2 class="section-title">
+            Resuelve tus <span class="title-gradient">dudas</span>
+          </h2>
+          <p class="section-desc">
+            Encuentra respuestas rápidas a las preguntas más comunes sobre
+            GEASIS y cómo puede transformar la gestión de tu institución
+            educativa.
+          </p>
+        </div>
+
+        <div class="faq-accordion">
+          <!-- FAQ ITEM 1 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text"
+                >¿Qué es GEASIS y cómo puede ayudar a mi institución?</span
+              >
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  GEASIS es una plataforma integral de gestión educativa que
+                  centraliza todos los procesos administrativos y académicos de
+                  tu institución. Automatiza tareas como el control de pagos,
+                  seguimiento de cobranza, gestión de expedientes,
+                  calificaciones y comunicación con padres de familia. Con
+                  GEASIS, reduces tiempos operativos hasta en un 70% y mejoras
+                  significativamente la eficiencia administrativa.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 2 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text"
+                >¿Cuánto tiempo toma implementar GEASIS en mi escuela?</span
+              >
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  El proceso de implementación generalmente toma entre 2 a 4
+                  semanas, dependiendo del tamaño de tu institución y la
+                  complejidad de tus procesos actuales. Incluye:
+                </p>
+                <ul>
+                  <li>
+                    Semana 1: Análisis y configuración inicial del sistema
+                  </li>
+                  <li>Semana 2: Migración de datos y personalización</li>
+                  <li>Semana 3: Capacitación del personal administrativo</li>
+                  <li>Semana 4: Puesta en marcha y soporte intensivo</li>
+                </ul>
+                <p>
+                  Nuestro equipo te acompaña en cada paso para garantizar una
+                  transición sin contratiempos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 3 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text"
+                >¿Qué nivel de soporte técnico ofrecen?</span
+              >
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  Ofrecemos soporte técnico integral con múltiples canales de
+                  atención:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Soporte 24/7:</strong> Chat en vivo, email y
+                    teléfono
+                  </li>
+                  <li>
+                    <strong>Atención prioritaria:</strong> Tiempo de respuesta
+                    menor a 2 horas
+                  </li>
+                  <li>
+                    <strong>Centro de ayuda:</strong> Base de conocimientos con
+                    tutoriales y guías
+                  </li>
+                  <li>
+                    <strong>Capacitación continua:</strong> Webinars mensuales y
+                    actualizaciones
+                  </li>
+                  <li>
+                    <strong>Gerente de cuenta dedicado:</strong> Para
+                    instituciones con más de 500 estudiantes
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 4 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text"
+                >¿Los datos de mi institución están seguros?</span
+              >
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  La seguridad es nuestra máxima prioridad. GEASIS implementa
+                  medidas de seguridad de nivel empresarial:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Encriptación SSL/TLS 256-bit:</strong> Todos los
+                    datos en tránsito están protegidos
+                  </li>
+                  <li>
+                    <strong>Respaldos automáticos:</strong> Backup diario con
+                    retención de 30 días
+                  </li>
+                  <li>
+                    <strong>Cumplimiento LFPDPPP:</strong> Cumplimos con la Ley
+                    Federal de Protección de Datos Personales
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 5 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text"
+                >¿Cuál es el costo de GEASIS y qué incluye?</span
+              >
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  GEASIS ofrece planes flexibles adaptados al tamaño y
+                  necesidades de tu institución. El precio se calcula por número
+                  de estudiantes e incluye:
+                </p>
+                <ul>
+                  <li>Acceso completo a todos los módulos del sistema</li>
+                  <li>Capacitación inicial y soporte técnico ilimitado</li>
+                  <li>Actualizaciones automáticas y nuevas funcionalidades</li>
+                  <li>Almacenamiento en la nube seguro</li>
+                </ul>
+                <p>
+                  <strong
+                    >Solicita una demostración para recibir una cotización
+                    personalizada</strong
+                  >
+                  según las características específicas de tu institución.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 6 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text"
+                >¿Puedo probar GEASIS antes de contratarlo?</span
+              >
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  ¡Por supuesto! Ofrecemos dos opciones para conocer GEASIS
+                  antes de tomar una decisión:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Demo personalizada:</strong> Una sesión en vivo de
+                    45 minutos donde un especialista te muestra el sistema
+                    adaptado a tus necesidades específicas
+                  </li>
+                  <li>
+                    <strong>Prueba gratuita de 30 días:</strong> Acceso completo
+                    al sistema con datos de prueba para que tu equipo explore
+                    todas las funcionalidades
+                  </li>
+                </ul>
+                <p>
+                  Durante la prueba, nuestro equipo está disponible para
+                  resolver dudas y ayudarte a configurar el sistema según tus
+                  procesos.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ ITEM 7 -->
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span class="faq-question-text"
+                >¿Qué pasa si necesito funcionalidades específicas que no tiene
+                GEASIS?</span
+              >
+              <svg
+                class="faq-icon"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <div class="faq-answer-content">
+                <p>
+                  GEASIS es una plataforma altamente personalizable. Si
+                  necesitas funcionalidades específicas, ofrecemos:
+                </p>
+                <ul>
+                  <li>
+                    <strong>Desarrollo a medida:</strong> Nuestro equipo puede
+                    crear módulos personalizados para tus necesidades
+                    particulares
+                  </li>
+                  <li>
+                    <strong>Configuración flexible:</strong> Muchas funciones se
+                    pueden adaptar mediante configuraciones sin necesidad de
+                    programación
+                  </li>
+                  <li>
+                    <strong>Roadmap colaborativo:</strong> Escuchamos las
+                    sugerencias de nuestros clientes para incluir nuevas
+                    características en futuras actualizaciones
+                  </li>
+                </ul>
+                <p>
+                  Agenda una consultoría gratuita para evaluar tus
+                  requerimientos específicos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA al final del FAQ -->
+        <div class="faq-cta">
+          <h3>¿Tienes más preguntas?</h3>
+          <p>
+            Nuestro equipo está listo para ayudarte a resolver cualquier duda
+            sobre GEASIS
+          </p>
+          <button class="btn-primary">
+            Contactar a un especialista
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICING SECTION ========== -->
+    <section class="pricing-section" id="precios">
+      <div class="pricing-container">
+        <div class="pricing-header">
+          <span class="section-badge">PLANES Y PRECIOS</span>
+          <h2 class="section-title">
+            Elige el plan perfecto<br /><span class="title-gradient"
+              >para tu institución</span
+            >
+          </h2>
+          <p class="section-desc">
+            Precios transparentes por plantel. Sin costos ocultos, sin
+            sorpresas.
+          </p>
+        </div>
+
+        <!-- PLANTEL 1: 1-200 Alumnos -->
+        <div class="pricing-tier">
+          <div class="tier-header">
+            <span class="tier-icon">🏫</span>
+            <h3>Plantel Pequeño</h3>
+            <p class="tier-range">1 - 200 alumnos</p>
+          </div>
+
+          <div class="pricing-cards">
+            <!-- BASIC -->
+            <div class="pricing-card">
+              <div class="card-header">
+                <h4 class="plan-name">BASIC</h4>
+                <p class="plan-description">PLATAFORMA WEB</p>
+              </div>
+
+              <div class="card-pricing">
+                <div class="pricing-item">
+                  <span class="pricing-label">Matrícula</span>
+                  <span class="pricing-value">200 <small>alumnos</small></span>
+                </div>
+                <div class="pricing-item highlight">
+                  <span class="pricing-label">Mensualidad</span>
+                  <span class="pricing-value"
+                    >$5,000 <small>MXN/mes</small></span
+                  >
+                </div>
+                <div class="pricing-item">
+                  <span class="pricing-label">Instalación</span>
+                  <span class="pricing-value"
+                    >$5,000 <small>Pago único</small></span
+                  >
+                </div>
+              </div>
+
+              <button class="btn-select">
+                <span>Seleccionar Basic</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- STANDARD -->
+            <div class="pricing-card featured">
+              <div class="card-header">
+                <h4 class="plan-name">STANDARD</h4>
+                <p class="plan-description">PLATAFORMA WEB + APP</p>
+              </div>
+
+              <div class="card-pricing">
+                <div class="pricing-item">
+                  <span class="pricing-label">Matrícula</span>
+                  <span class="pricing-value">200 <small>alumnos</small></span>
+                </div>
+                <div class="pricing-item highlight">
+                  <span class="pricing-label">Mensualidad</span>
+                  <span class="pricing-value"
+                    >$7,500 <small>MXN/mes</small></span
+                  >
+                </div>
+                <div class="pricing-item">
+                  <span class="pricing-label">Instalación</span>
+                  <span class="pricing-value"
+                    >$5,000 <small>Pago único</small></span
+                  >
+                </div>
+              </div>
+
+              <button class="btn-select primary">
+                <span>Seleccionar Standard</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- PRO -->
+            <div class="pricing-card">
+              <div class="card-header">
+                <h4 class="plan-name">PRO</h4>
+                <p class="plan-description">
+                  PLATAFORMA WEB + APP + WEB + PLAN MARKETING+ DISEÑO
+                </p>
+              </div>
+
+              <div class="card-pricing">
+                <div class="pricing-item">
+                  <span class="pricing-label">Matrícula</span>
+                  <span class="pricing-value">200 <small>alumnos</small></span>
+                </div>
+                <div class="pricing-item highlight">
+                  <span class="pricing-label">Mensualidad</span>
+                  <span class="pricing-value"
+                    >$10,000 <small>MXN/mes</small></span
+                  >
+                </div>
+                <div class="pricing-item">
+                  <span class="pricing-label">Instalación</span>
+                  <span class="pricing-value"
+                    >$5,000 <small>Pago único</small></span
+                  >
+                </div>
+              </div>
+
+              <button class="btn-select">
+                <span>Seleccionar Pro</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PLANTEL 2: 201-400 Alumnos -->
+        <div class="pricing-tier">
+          <div class="tier-header">
+            <span class="tier-icon">🏛️</span>
+            <h3>Plantel Mediano</h3>
+            <p class="tier-range">201 - 400 alumnos</p>
+          </div>
+
+          <div class="pricing-cards">
+            <!-- BASIC -->
+            <div class="pricing-card">
+              <div class="card-header">
+                <h4 class="plan-name">BASIC</h4>
+                <p class="plan-description">PLATAFORMA WEB</p>
+              </div>
+
+              <div class="card-pricing">
+                <div class="pricing-item">
+                  <span class="pricing-label">Matrícula</span>
+                  <span class="pricing-value">400 <small>alumnos</small></span>
+                </div>
+                <div class="pricing-item highlight">
+                  <span class="pricing-label">Mensualidad</span>
+                  <span class="pricing-value"
+                    >$10,000 <small>MXN/mes</small></span
+                  >
+                </div>
+                <div class="pricing-item">
+                  <span class="pricing-label">Instalación</span>
+                  <span class="pricing-value"
+                    >$7,500 <small>Pago único</small></span
+                  >
+                </div>
+              </div>
+
+              <button class="btn-select">
+                <span>Seleccionar Basic</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- STANDARD -->
+            <div class="pricing-card featured">
+              <div class="card-header">
+                <h4 class="plan-name">STANDARD</h4>
+                <p class="plan-description">PLATAFORMA WEB + APP</p>
+              </div>
+
+              <div class="card-pricing">
+                <div class="pricing-item">
+                  <span class="pricing-label">Matrícula</span>
+                  <span class="pricing-value">400 <small>alumnos</small></span>
+                </div>
+                <div class="pricing-item highlight">
+                  <span class="pricing-label">Mensualidad</span>
+                  <span class="pricing-value"
+                    >$12,000 <small>MXN/mes</small></span
+                  >
+                </div>
+                <div class="pricing-item">
+                  <span class="pricing-label">Instalación</span>
+                  <span class="pricing-value"
+                    >$7,500 <small>Pago único</small></span
+                  >
+                </div>
+              </div>
+
+              <button class="btn-select primary">
+                <span>Seleccionar Standard</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+
+            <!-- PRO -->
+            <div class="pricing-card">
+              <div class="card-header">
+                <h4 class="plan-name">PRO</h4>
+                <p class="plan-description">
+                  PLATAFORMA WEB + APP + WEB + PLAN MARKETING+ DISEÑO
+                </p>
+              </div>
+
+              <div class="card-pricing">
+                <div class="pricing-item">
+                  <span class="pricing-label">Matrícula</span>
+                  <span class="pricing-value">400 <small>alumnos</small></span>
+                </div>
+                <div class="pricing-item highlight">
+                  <span class="pricing-label">Mensualidad</span>
+                  <span class="pricing-value"
+                    >$14,000 <small>MXN/mes</small></span
+                  >
+                </div>
+                <div class="pricing-item">
+                  <span class="pricing-label">Instalación</span>
+                  <span class="pricing-value"
+                    >$7,500 <small>Pago único</small></span
+                  >
+                </div>
+              </div>
+
+              <button class="btn-select">
+                <span>Seleccionar Pro</span>
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Final -->
+        <div class="pricing-cta">
+          <h3>¿Más de 400 alumnos?</h3>
+          <p>
+            Contáctanos para un plan personalizado ajustado a tus necesidades
+          </p>
+          <button class="btn-primary">
+            <span>Solicitar cotización personalizada</span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#">
+            <svg
+              width="28"
+              height="28"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+            </svg>
+            <span>GEASIS</span>
+          </a>
+          <p>ERP Académico Inteligente</p>
+        </div>
+        <div class="footer-stats">
+          <div>
+            <span class="fs-num">34</span
+            ><span class="fs-label">Instituciones</span>
+          </div>
+          <div>
+            <span class="fs-num">7,853</span
+            ><span class="fs-label">Usuarios</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 GEASIS. Todos los derechos reservados.</span>
+      </div>
+    </footer>
+
+    <!-- ========== MODAL DEMO ========== -->
+    <div class="demo-modal-overlay" id="demoModal">
+      <div class="demo-modal-content">
+        <button class="demo-modal-close" id="closeDemoModal">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="demo-modal-header">
+          <div class="demo-modal-icon">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </div>
+          <h2>Solicita tu demostración</h2>
+          <p>Completa el formulario y nos pondremos en contacto contigo</p>
+        </div>
+
+        <form class="demo-form" id="demoForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nombre">Nombre completo *</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                required
+                placeholder="Ej: Juan Pérez"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="correo">Correo electrónico *</label>
+              <input
+                type="email"
+                id="correo"
+                name="correo"
+                required
+                placeholder="tu@email.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono *</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                required
+                placeholder="+52 55 1234 5678"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="organizacion">Nombre de la organización *</label>
+              <input
+                type="text"
+                id="organizacion"
+                name="organizacion"
+                required
+                placeholder="Ej: Colegio San Miguel"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="tipoInstitucion">Tipo de institución *</label>
+              <select id="tipoInstitucion" name="tipoInstitucion" required>
+                <option value="">Selecciona una opción</option>
+                <option value="Preescolar">Preescolar</option>
+                <option value="Primaria">Primaria</option>
+                <option value="Secundaria">Secundaria</option>
+                <option value="Preparatoria">Preparatoria</option>
+                <option value="Universidad">Universidad</option>
+                <option value="Instituto Técnico">Instituto Técnico</option>
+                <option value="Centro de Capacitación">
+                  Centro de Capacitación
+                </option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="numeroEstudiantes">Número de estudiantes</label>
+              <select id="numeroEstudiantes" name="numeroEstudiantes">
+                <option value="">Selecciona una opción</option>
+                <option value="1-50">1 - 200</option>
+                <option value="51-100">201 - 400</option>
+                <option value="101-300">+400</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cargo">Cargo / Puesto</label>
+              <input
+                type="text"
+                id="cargo"
+                name="cargo"
+                placeholder="Ej: Director Académico"
+              />
+            </div>
+            <div class="form-group">
+              <label for="ciudad">Ciudad / Estado</label>
+              <input
+                type="text"
+                id="ciudad"
+                name="ciudad"
+                placeholder="Ej: Ciudad de México"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="mensaje"
+                >¿Qué te gustaría ver en la demostración?</label
+              >
+              <textarea
+                id="mensaje"
+                name="mensaje"
+                rows="4"
+                placeholder="Cuéntanos qué módulos o funcionalidades te interesan más..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn-submit">
+              <span>Enviar solicitud</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ========== GEASIS BOT ========== -->
+    <div class="geasis-bot" id="geasisBot">
+      <!-- Avatar del Bot -->
+      <div class="bot-avatar" id="botAvatar">
+        <div class="bot-avatar-circle">
+          <svg
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <rect x="3" y="11" width="18" height="10" rx="2"></rect>
+            <circle cx="12" cy="5" r="2"></circle>
+            <path d="M12 7v4"></path>
+            <line x1="8" y1="16" x2="8" y2="16"></line>
+            <line x1="16" y1="16" x2="16" y2="16"></line>
+          </svg>
+        </div>
+        <span class="bot-pulse"></span>
+      </div>
+
+      <!-- Mensaje del Bot -->
+      <div class="bot-message" id="botMessage">
+        <div class="bot-typing" id="botTyping">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="bot-text" id="botText"></div>
+        <button class="bot-close" id="botClose" aria-label="Cerrar mensaje">
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/branding.js"></script>
+    <script src="js/microinteractions.js"></script>
+    <script src="js/geasis-bot.js"></script>
+  </body>
+</html>

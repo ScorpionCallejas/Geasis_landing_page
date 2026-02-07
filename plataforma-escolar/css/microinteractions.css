@@ -1,0 +1,38 @@
+/* ========================================
+   MICROINTERACCIONES - SOLO RIPPLE
+======================================== */
+
+/* Efecto ripple al hacer click */
+.ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 188, 212, 0.5);
+  transform: scale(0);
+  animation: ripple-animation 0.6s ease-out;
+  pointer-events: none;
+  z-index: 100;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Modo claro */
+[data-theme="light"] .ripple-effect {
+  background: rgba(0, 151, 167, 0.4);
+}
+
+/* Asegurar que los elementos tengan overflow hidden */
+.btn-primary,
+.btn-secondary,
+.nav-cta,
+.module-btn,
+.btn-submit,
+.module-card,
+.testimonial-card,
+.embudo-card {
+  overflow: hidden;
+}
